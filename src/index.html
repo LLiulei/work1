@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>主页面</title>
+    <link rel="stylesheet" href="./css/swiper-4.2.2.min.css">
+    <link rel="stylesheet" href="./css/quan.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <span>北京</span>
+            假日旅行
+            <span>登录</span>
+        </header>
+        <section>
+            <div class="swiper-container cont">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/img1.jpeg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/img2.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/img3.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/img4.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/img5.jpeg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/img6.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/img7.jpeg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/img8.jpg">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- 酒店类型列表 -->
+            <div class="list-wrap">
+                <!-- 滚动盒子 第一个元素 -->
+                <div up="上拉加载" down="下拉加载">
+                    <ul>
+                        <li>内容1</li>
+                        <li>内容2</li>
+                        <li>内容3</li>
+                        <li>内容4</li>
+                        <li>内容5</li>
+                        <li>内容6</li>
+                        <li>内容7</li>
+                        <li>内容8</li>
+                        <li>内容9</li>
+                        <li>内容10</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./js/libs/require.js"></script>
+    <script>
+        require(['./js/main.js'],function(){
+            require(['index'])
+        })
+    </script>
+</body>
+</html>
