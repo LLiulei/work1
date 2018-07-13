@@ -6,6 +6,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var path = require('path');
 var url = require('url');
 var fs = require('fs');
+var swiperJson = require('./mock/swiper.json');
 gulp.task('server',['devCss'],function(){
     gulp.src('src')
         .pipe(server({
@@ -15,8 +16,8 @@ gulp.task('server',['devCss'],function(){
                 if(req.url === '/favicon.ico'){
                     return false;
                 }
-                if(pathname === '/api/list'){
-
+                if(pathname === '/api/swiper'){
+                    res.end(JSON.stringify({code:1,data:swiperJson}))
                 }else{
                     pathname = pathname === '/' ? '/index.html' : pathname;
                     res.end(fs.readFileSync(path.join(__dirname,'src',pathname)));

@@ -69,6 +69,20 @@ body,
                     top: -40px;
                     left: 0;
                     display: block;
+                    color:#fff;
+                }
+                &:after{
+                    content: attr(up);
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                    background-color: skyblue;
+                    text-align: center;
+                    position: absolute;
+                    bottom: -40px;
+                    left: 0;
+                    display: block;
+                    color:#fff;
                 }
             }
         }

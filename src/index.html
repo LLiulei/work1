@@ -46,6 +46,13 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
+            <script type="text/x-handlebars-template" id="swiper-tpl">
+                {{#each this}}
+                <div class="swiper-slide">
+                    <img src={{url}}>
+                </div>  
+                {{/each}}
+            </script>
             <!-- 酒店类型列表 -->
             <div class="list-wrap">
                 <!-- 滚动盒子 第一个元素 -->
